@@ -15,7 +15,6 @@ class CreateBitacorasTable extends Migration
     {
         Schema::create('bitacoras', function (Blueprint $table) {
             $table->string('quien');
-            $table->timestamp('cuando');
             $table->string('accion');
             $table->string('que');
         });

@@ -17,6 +17,7 @@ class CreateUsuariosTable extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('a_paterno');
+            $table->string('email')->unique();
             $table->string('a_materno');
             $table->string('imagen');
             $table->enum('rol', ['Supervisor', 'Encargado','Contador','Cliente'])->default('Cliente');

@@ -3,8 +3,6 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Models\Categoria;
-use App\Observers\CategoriaObserver;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -25,6 +23,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Categoria::observe(CategoriaObserver::class);
+        //
     }
 }
